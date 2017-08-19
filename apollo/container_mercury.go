@@ -21,7 +21,7 @@ import (
 	"time"
 
 	"gopkg.in/flosch/pongo2.v3"
-	"gopkg.in/mercury/go-mercury.v2"
+	"github.com/AriseBank/go-mercury"
 	"gopkg.in/yaml.v2"
 
 	"github.com/AriseBank/apollo-controller/apollo/db"

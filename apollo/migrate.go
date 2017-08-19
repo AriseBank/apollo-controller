@@ -20,7 +20,7 @@ import (
 
 	"github.com/golang/protobuf/proto"
 	"github.com/gorilla/websocket"
-	"gopkg.in/mercury/go-mercury.v2"
+	"github.com/AriseBank/go-mercury"
 
 	"github.com/AriseBank/apollo-controller/shared"
 	"github.com/AriseBank/apollo-controller/shared/api"

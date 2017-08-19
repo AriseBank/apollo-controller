@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"gopkg.in/mercury/go-mercury.v2"
+	"github.com/AriseBank/go-mercury"
 
 	"github.com/AriseBank/apollo-controller/apollo/db"
 	"github.com/AriseBank/apollo-controller/apollo/types"

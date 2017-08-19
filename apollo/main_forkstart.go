@@ -5,7 +5,7 @@ import (
 	"os"
 	"syscall"
 
-	"gopkg.in/mercury/go-mercury.v2"
+	"github.com/AriseBank/go-mercury"
 
 	"github.com/AriseBank/apollo-controller/shared"
 )

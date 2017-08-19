@@ -5,7 +5,7 @@ import (
 	"os"
 	"strconv"
 
-	"gopkg.in/mercury/go-mercury.v2"
+	"github.com/AriseBank/go-mercury"
 )
 
 /*
