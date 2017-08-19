@@ -1,0 +1,33 @@
+version: '{branch}.{build}'
+clone_folder: c:\gopath\src\github.com\mercury\apollo
+environment:
+  GOPATH: c:\gopath
+
+install:
+- cmd: |-
+    echo %PATH%
+    echo %GOPATH%
+    set PATH=%GOPATH%\bin;c:\go\bin;%PATH%
+    go version
+    go env
+
+build_script:
+- cmd: |-
+    go get -t -v -d ./...
+    go install -v ./mercury
+
+test_script:
+- cmd: |-
+    go test -v ./client
+    go test -v ./mercury
+    go test -v ./shared
+
+after_test:
+  # powershell capture command output into environment variable
+  - ps: $env:VERSION = mercury version
+  - echo %VERSION%
+  # pack mercury as an artifact for upload
+  - 7z a mercury-%VERSION%-windows-amd64.zip c:\gopath\bin\mercury.exe
+
+artifacts:
+- path: "*.zip"

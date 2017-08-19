@@ -1,0 +1,12 @@
+*.swp
+po/*.mo
+po/*.po~
+apollo-*.tar.gz
+.vagrant
+test/deps/devapollo-client
+*~
+tags
+
+# For Atom ctags
+.tags
+.tags1

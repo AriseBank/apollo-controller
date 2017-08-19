@@ -1,0 +1,2128 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: apollo\n"
+"Report-Msgid-Bugs-To: mercury-devel@lists.linuxcontainers.org\n"
+"POT-Creation-Date: 2017-08-10 18:03-0400\n"
+"PO-Revision-Date: 2017-02-14 08:00+0000\n"
+"Last-Translator: Simos Xenitellis <simos.65@gmail.com>\n"
+"Language-Team: Greek <https://hosted.weblate.org/projects/linux-containers/"
+"apollo/el/>\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.12-dev\n"
+
+#: mercury/storage.go:31
+msgid ""
+"### This is a yaml representation of a storage pool.\n"
+"### Any line starting with a '# will be ignored.\n"
+"###\n"
+"### A storage pool consists of a set of configuration items.\n"
+"###\n"
+"### An example would look like:\n"
+"### name: default\n"
+"### driver: zfs\n"
+"### used_by: []\n"
+"### config:\n"
+"###   size: \"61203283968\"\n"
+"###   source: /home/chb/mnt/apollo_test/default.img\n"
+"###   zfs.pool_name: default"
+msgstr ""
+
+#: mercury/storage.go:48
+msgid ""
+"### This is a yaml representation of a storage volume.\n"
+"### Any line starting with a '# will be ignored.\n"
+"###\n"
+"### A storage volume consists of a set of configuration items.\n"
+"###\n"
+"### name: vol1\n"
+"### type: custom\n"
+"### used_by: []\n"
+"### config:\n"
+"###   size: \"61203283968\""
+msgstr ""
+
+#: mercury/config.go:40
+msgid ""
+"### This is a yaml representation of the configuration.\n"
+"### Any line starting with a '# will be ignored.\n"
+"###\n"
+"### A sample configuration looks like:\n"
+"### name: container1\n"
+"### profiles:\n"
+"### - default\n"
+"### config:\n"
+"###   volatile.eth0.hwaddr: 00:16:3e:e9:f8:7f\n"
+"### devices:\n"
+"###   homedir:\n"
+"###     path: /extra\n"
+"###     source: /home/user\n"
+"###     type: disk\n"
+"### ephemeral: false\n"
+"###\n"
+"### Note that the name is shown but cannot be changed"
+msgstr ""
+
+#: mercury/config.go:61
+msgid ""
+"### This is a yaml representation of the container metadata.\n"
+"### Any line starting with a '# will be ignored.\n"
+"###\n"
+"### A sample configuration looks like:\n"
+"###\n"
+"### architecture: x86_64\n"
+"### creation_date: 1477146654\n"
+"### expiry_date: 0\n"
+"### properties:\n"
+"###   architecture: x86_64\n"
+"###   description: Busybox x86_64\n"
+"###   name: busybox-x86_64\n"
+"###   os: Busybox\n"
+"### templates:\n"
+"###   /template:\n"
+"###     when:\n"
+"###     - \"\"\n"
+"###     create_only: false\n"
+"###     template: template.tpl\n"
+"###     properties: {}"
+msgstr ""
+
+#: mercury/image.go:62
+msgid ""
+"### This is a yaml representation of the image properties.\n"
+"### Any line starting with a '# will be ignored.\n"
+"###\n"
+"### Each property is represented by a single line:\n"
+"### An example would be:\n"
+"###  description: My custom image"
+msgstr ""
+
+#: mercury/network.go:30
+msgid ""
+"### This is a yaml representation of the network.\n"
+"### Any line starting with a '# will be ignored.\n"
+"###\n"
+"### A network consists of a set of configuration items.\n"
+"###\n"
+"### An example would look like:\n"
+"### name: apollobr0\n"
+"### config:\n"
+"###   ipv4.address: 10.62.42.1/24\n"
+"###   ipv4.nat: true\n"
+"###   ipv6.address: fd00:56ad:9f7a:9800::1/64\n"
+"###   ipv6.nat: true\n"
+"### managed: true\n"
+"### type: bridge\n"
+"###\n"
+"### Note that only the configuration can be changed."
+msgstr ""
+
+#: mercury/profile.go:30
+msgid ""
+"### This is a yaml representation of the profile.\n"
+"### Any line starting with a '# will be ignored.\n"
+"###\n"
+"### A profile consists of a set of configuration items followed by a set of\n"
+"### devices.\n"
+"###\n"
+"### An example would look like:\n"
+"### name: onenic\n"
+"### config:\n"
+"###   raw.mercury: mercury.aa_profile=unconfined\n"
+"### devices:\n"
+"###   eth0:\n"
+"###     nictype: bridged\n"
+"###     parent: apollobr0\n"
+"###     type: nic\n"
+"###\n"
+"### Note that the name is shown but cannot be changed"
+msgstr ""
+
+#: mercury/image.go:183
+#, c-format
+msgid "%s (%d more)"
+msgstr ""
+
+#: mercury/file.go:192
+#, c-format
+msgid "%s is not a directory"
+msgstr ""
+
+#: mercury/utils.go:345
+#, c-format
+msgid "%v (interrupt two more times to force)"
+msgstr ""
+
+#: mercury/file.go:130
+#, c-format
+msgid "'%s' isn't a supported file type."
+msgstr ""
+
+#: mercury/snapshot.go:53
+msgid "'/' not allowed in snapshot name"
+msgstr ""
+
+#: mercury/profile.go:319
+msgid "(none)"
+msgstr ""
+
+#: mercury/image.go:227 mercury/image.go:1088
+msgid "ALIAS"
+msgstr ""
+
+#: mercury/image.go:228
+msgid "ALIASES"
+msgstr ""
+
+#: mercury/image.go:232
+msgid "ARCH"
+msgstr ""
+
+#: mercury/list.go:461
+msgid "ARCHITECTURE"
+msgstr ""
+
+#: mercury/remote.go:67
+msgid "Accept certificate"
+msgstr ""
+
+#: mercury/query.go:38
+msgid "Action (defaults to GET)"
+msgstr ""
+
+#: mercury/remote.go:256
+#, c-format
+msgid "Admin password for %s: "
+msgstr ""
+
+#: mercury/image.go:592
+msgid "Aliases:"
+msgstr ""
+
+#: mercury/image.go:570 mercury/info.go:104
+#, c-format
+msgid "Architecture: %s"
+msgstr ""
+
+#: mercury/image.go:600
+#, c-format
+msgid "Auto update: %s"
+msgstr ""
+
+#: mercury/image.go:674
+#, c-format
+msgid "Bad property: %s"
+msgstr ""
+
+#: mercury/info.go:197
+msgid "Bytes received"
+msgstr ""
+
+#: mercury/info.go:198
+msgid "Bytes sent"
+msgstr ""
+
+#: mercury/config.go:400
+msgid "COMMON NAME"
+msgstr ""
+
+#: mercury/info.go:161
+msgid "CPU usage (in seconds)"
+msgstr ""
+
+#: mercury/info.go:165
+#, fuzzy
+msgid "CPU usage:"
+msgstr "  Χρήση CPU:"
+
+#: mercury/list.go:462
+msgid "CREATED AT"
+msgstr ""
+
+#: mercury/file.go:485
+msgid "Can't pull a directory without --recursive"
+msgstr ""
+
+#: mercury/config.go:207 mercury/network.go:542
+#, c-format
+msgid "Can't read from stdin: %s"
+msgstr ""
+
+#: mercury/config.go:220
+#, c-format
+msgid "Can't unset key '%s', it's not currently set"
+msgstr ""
+
+#: mercury/config.go:262 mercury/config.go:288
+#, c-format
+msgid "Can't unset key '%s', it's not currently set."
+msgstr ""
+
+#: mercury/network.go:468 mercury/profile.go:528 mercury/storage.go:625
+msgid "Cannot provide container name to list"
+msgstr ""
+
+#: mercury/remote.go:192
+#, c-format
+msgid "Certificate fingerprint: %s"
+msgstr ""
+
+#: mercury/remote.go:291
+msgid "Client certificate stored at server: "
+msgstr ""
+
+#: mercury/image.go:171 mercury/image.go:172 mercury/list.go:128 mercury/list.go:129
+msgid "Columns"
+msgstr ""
+
+#: mercury/help.go:53
+msgid "Commands:"
+msgstr ""
+
+#: mercury/copy.go:35 mercury/copy.go:36 mercury/init.go:137 mercury/init.go:138
+msgid "Config key/value to apply to the new container"
+msgstr ""
+
+#: mercury/config.go:816 mercury/config.go:881 mercury/config.go:1331 mercury/image.go:1143
+#: mercury/network.go:418 mercury/profile.go:267 mercury/storage.go:576 mercury/storage.go:935
+#, c-format
+msgid "Config parsing error: %s"
+msgstr ""
+
+#: mercury/main.go:36
+msgid "Connection refused; is APOLLO running?"
+msgstr ""
+
+#: mercury/publish.go:71
+msgid "Container name is mandatory"
+msgstr ""
+
+#: mercury/copy.go:229 mercury/init.go:317
+#, c-format
+msgid "Container name is: %s"
+msgstr ""
+
+#: mercury/publish.go:250
+#, c-format
+msgid "Container published with fingerprint: %s"
+msgstr ""
+
+#: mercury/copy.go:43 mercury/move.go:42
+msgid "Copy a stateful container stateless"
+msgstr ""
+
+#: mercury/image.go:174
+msgid "Copy aliases from source"
+msgstr ""
+
+#: mercury/copy.go:42
+msgid "Copy the container without its snapshots"
+msgstr ""
+
+#: mercury/image.go:429
+#, c-format
+msgid "Copying the image: %s"
+msgstr ""
+
+#: mercury/remote.go:207
+msgid "Could not create server cert dir"
+msgstr ""
+
+#: mercury/file.go:70 mercury/file.go:71
+msgid "Create any directories necessary"
+msgstr ""
+
+#: mercury/image.go:575 mercury/info.go:106
+#, c-format
+msgid "Created: %s"
+msgstr ""
+
+#: mercury/init.go:196
+#, c-format
+msgid "Creating %s"
+msgstr ""
+
+#: mercury/init.go:194
+msgid "Creating the container"
+msgstr ""
+
+#: mercury/image.go:231 mercury/image.go:1090 mercury/list.go:463 mercury/network.go:507
+#: mercury/storage.go:654 mercury/storage.go:749
+msgid "DESCRIPTION"
+msgstr ""
+
+#: mercury/storage.go:655
+msgid "DRIVER"
+msgstr ""
+
+#: mercury/publish.go:39
+msgid "Define a compression algorithm: for image or none"
+msgstr ""
+
+#: mercury/config.go:972
+#, c-format
+msgid "Device %s added to %s"
+msgstr ""
+
+#: mercury/config.go:1208
+#, c-format
+msgid "Device %s removed from %s"
+msgstr ""
+
+#: mercury/utils.go:277 mercury/utils.go:301
+#, c-format
+msgid "Device already exists: %s"
+msgstr ""
+
+#: mercury/image.go:1242
+msgid "Directory import is not available on this platform"
+msgstr ""
+
+#: mercury/exec.go:65
+msgid "Disable pseudo-terminal allocation"
+msgstr ""
+
+#: mercury/exec.go:66
+msgid "Disable stdin (reads from /dev/null)"
+msgstr ""
+
+#: mercury/info.go:154
+#, fuzzy
+msgid "Disk usage:"
+msgstr "  Χρήση CPU:"
+
+#: mercury/list.go:619
+msgid "EPHEMERAL"
+msgstr ""
+
+#: mercury/config.go:402
+msgid "EXPIRY DATE"
+msgstr ""
+
+#: mercury/main.go:48
+msgid "Enable debug mode"
+msgstr ""
+
+#: mercury/main.go:47
+msgid "Enable verbose mode"
+msgstr ""
+
+#: mercury/exec.go:62
+msgid "Environment variable to set (e.g. HOME=/home/foo)"
+msgstr ""
+
+#: mercury/help.go:77
+msgid "Environment:"
+msgstr ""
+
+#: mercury/copy.go:39 mercury/copy.go:40 mercury/init.go:141 mercury/init.go:142
+msgid "Ephemeral container"
+msgstr ""
+
+#: mercury/config.go:1381
+#, c-format
+msgid "Error updating template file: %s"
+msgstr ""
+
+#: mercury/monitor.go:56
+msgid "Event type to listen for"
+msgstr ""
+
+#: mercury/image.go:579
+#, c-format
+msgid "Expires: %s"
+msgstr ""
+
+#: mercury/image.go:581
+msgid "Expires: never"
+msgstr ""
+
+#: mercury/image.go:884
+#, c-format
+msgid "Exporting the image: %s"
+msgstr ""
+
+#: mercury/config.go:756
+msgid "FILENAME"
+msgstr ""
+
+#: mercury/config.go:399 mercury/image.go:229 mercury/image.go:1089
+msgid "FINGERPRINT"
+msgstr ""
+
+#: mercury/utils.go:383
+#, c-format
+msgid "Failed to create alias %s"
+msgstr ""
+
+#: mercury/manpage.go:62
+#, c-format
+msgid "Failed to generate 'mercury.%s.1': %v"
+msgstr ""
+
+#: mercury/manpage.go:55
+#, c-format
+msgid "Failed to generate 'mercury.1': %v"
+msgstr ""
+
+#: mercury/copy.go:224
+msgid "Failed to get the new container name"
+msgstr ""
+
+#: mercury/utils.go:373
+#, c-format
+msgid "Failed to remove alias %s"
+msgstr ""
+
+#: mercury/file.go:125
+#, c-format
+msgid "Failed to walk path for %s: %s"
+msgstr ""
+
+#: mercury/list.go:131
+msgid "Fast mode (same as --columns=nsacPt)"
+msgstr ""
+
+#: mercury/image.go:568
+#, c-format
+msgid "Fingerprint: %s"
+msgstr ""
+
+#: mercury/exec.go:64
+msgid "Force pseudo-terminal allocation"
+msgstr ""
+
+#: mercury/action.go:46 mercury/action.go:47
+msgid "Force the container to shutdown"
+msgstr ""
+
+#: mercury/delete.go:34 mercury/delete.go:35
+msgid "Force the removal of stopped containers"
+msgstr ""
+
+#: mercury/main.go:49
+msgid "Force using the local unix socket"
+msgstr ""
+
+#: mercury/image.go:177 mercury/list.go:130
+msgid "Format (csv|json|table|yaml)"
+msgstr ""
+
+#: mercury/remote.go:155
+msgid "Generating a client certificate. This may take a minute..."
+msgstr ""
+
+#: mercury/list.go:459
+msgid "IPV4"
+msgstr ""
+
+#: mercury/list.go:460
+msgid "IPV6"
+msgstr ""
+
+#: mercury/config.go:401
+msgid "ISSUE DATE"
+msgstr ""
+
+#: mercury/main.go:163
+msgid "If this is your first time using APOLLO, you should also run: apollo init"
+msgstr ""
+
+#: mercury/main.go:50
+msgid "Ignore aliases when determining what command to run"
+msgstr ""
+
+#: mercury/action.go:50
+msgid "Ignore the container state (only for start)"
+msgstr ""
+
+#: mercury/image.go:531
+msgid "Image already up to date."
+msgstr ""
+
+#: mercury/image.go:443
+msgid "Image copied successfully!"
+msgstr ""
+
+#: mercury/image.go:934
+msgid "Image exported successfully!"
+msgstr ""
+
+#: mercury/image.go:741
+#, c-format
+msgid "Image imported with fingerprint: %s"
+msgstr ""
+
+#: mercury/image.go:529
+msgid "Image refreshed successfully!"
+msgstr ""
+
+#: mercury/query.go:39
+msgid "Input data"
+msgstr ""
+
+#: mercury/init.go:147
+msgid "Instance type"
+msgstr ""
+
+#: mercury/remote.go:107
+#, c-format
+msgid "Invalid URL scheme \"%s\" in \"%s\""
+msgstr ""
+
+#: mercury/config.go:380
+msgid "Invalid certificate"
+msgstr ""
+
+#: mercury/init.go:31 mercury/init.go:36
+msgid "Invalid configuration key"
+msgstr ""
+
+#: mercury/file.go:528
+#, c-format
+msgid "Invalid path %s"
+msgstr ""
+
+#: mercury/file.go:457
+#, c-format
+msgid "Invalid source %s"
+msgstr ""
+
+#: mercury/file.go:234
+#, c-format
+msgid "Invalid target %s"
+msgstr ""
+
+#: mercury/info.go:135
+msgid "Ips:"
+msgstr ""
+
+#: mercury/image.go:175
+msgid "Keep the image up to date after initial copy"
+msgstr ""
+
+#: mercury/list.go:464
+msgid "LAST USED AT"
+msgstr ""
+
+#: mercury/main.go:34
+msgid "APOLLO socket not found; is APOLLO installed and running?"
+msgstr ""
+
+#: mercury/image.go:584
+#, c-format
+msgid "Last used: %s"
+msgstr ""
+
+#: mercury/image.go:586
+msgid "Last used: never"
+msgstr ""
+
+#: mercury/info.go:250
+msgid "Log:"
+msgstr ""
+
+#: mercury/network.go:506
+msgid "MANAGED"
+msgstr ""
+
+#: mercury/image.go:173
+msgid "Make image public"
+msgstr ""
+
+#: mercury/publish.go:35
+msgid "Make the image public"
+msgstr ""
+
+#: mercury/info.go:172
+msgid "Memory (current)"
+msgstr ""
+
+#: mercury/info.go:176
+msgid "Memory (peak)"
+msgstr ""
+
+#: mercury/info.go:188
+#, fuzzy
+msgid "Memory usage:"
+msgstr "  Χρήση μνήμης:"
+
+#: mercury/utils.go:228
+msgid "Missing summary."
+msgstr ""
+
+#: mercury/network.go:276 mercury/network.go:329 mercury/storage.go:374 mercury/storage.go:494
+msgid "More than one device matches, specify the device name."
+msgstr ""
+
+#: mercury/file.go:444
+msgid "More than one file to download, but target is not a directory"
+msgstr ""
+
+#: mercury/move.go:40
+msgid "Move the container without its snapshots"
+msgstr ""
+
+#: mercury/image.go:1244
+msgid "Must run as root to import from directory"
+msgstr ""
+
+#: mercury/action.go:72
+msgid "Must supply container name for: "
+msgstr ""
+
+#: mercury/list.go:465 mercury/network.go:504 mercury/profile.go:555 mercury/remote.go:381
+#: mercury/storage.go:653 mercury/storage.go:748
+msgid "NAME"
+msgstr ""
+
+#: mercury/network.go:490 mercury/remote.go:355 mercury/remote.go:360
+msgid "NO"
+msgstr ""
+
+#: mercury/info.go:99
+#, c-format
+msgid "Name: %s"
+msgstr ""
+
+#: mercury/network.go:250
+#, c-format
+msgid "Network %s created"
+msgstr ""
+
+#: mercury/network.go:366
+#, c-format
+msgid "Network %s deleted"
+msgstr ""
+
+#: mercury/init.go:143 mercury/init.go:144
+msgid "Network name"
+msgstr ""
+
+#: mercury/info.go:205
+#, fuzzy
+msgid "Network usage:"
+msgstr "  Χρήση δικτύου:"
+
+#: mercury/image.go:176 mercury/publish.go:36
+msgid "New alias to define at target"
+msgstr ""
+
+#: mercury/config.go:411
+msgid "No certificate provided to add"
+msgstr ""
+
+#: mercury/network.go:285 mercury/network.go:338
+msgid "No device found for this network"
+msgstr ""
+
+#: mercury/storage.go:383 mercury/storage.go:503
+msgid "No device found for this storage volume."
+msgstr ""
+
+#: mercury/config.go:443
+msgid "No fingerprint specified."
+msgstr ""
+
+#: mercury/storage.go:327 mercury/storage.go:420
+msgid "Only \"custom\" volumes can be attached to containers."
+msgstr ""
+
+#: mercury/remote.go:92
+msgid "Only https URLs are supported for simplestreams"
+msgstr ""
+
+#: mercury/image.go:655
+msgid "Only https:// is supported for remote image import."
+msgstr ""
+
+#: mercury/network.go:394 mercury/network.go:528
+msgid "Only managed networks can be modified."
+msgstr ""
+
+#: mercury/help.go:71 mercury/main.go:130 mercury/main.go:187
+msgid "Options:"
+msgstr ""
+
+#: mercury/exec.go:63
+msgid "Override the terminal mode (auto, interactive or non-interactive)"
+msgstr ""
+
+#: mercury/list.go:621
+msgid "PERSISTENT"
+msgstr ""
+
+#: mercury/list.go:466
+msgid "PID"
+msgstr ""
+
+#: mercury/list.go:467
+msgid "PROFILES"
+msgstr ""
+
+#: mercury/remote.go:383
+msgid "PROTOCOL"
+msgstr ""
+
+#: mercury/image.go:230 mercury/remote.go:384
+msgid "PUBLIC"
+msgstr ""
+
+#: mercury/info.go:199
+msgid "Packets received"
+msgstr ""
+
+#: mercury/info.go:200
+msgid "Packets sent"
+msgstr ""
+
+#: mercury/help.go:78
+msgid "Path to an alternate client configuration directory"
+msgstr ""
+
+#: mercury/help.go:79
+msgid "Path to an alternate server directory"
+msgstr ""
+
+#: mercury/main.go:227
+msgid "Pause containers."
+msgstr ""
+
+#: mercury/main.go:38
+msgid "Permission denied, are you in the apollo group?"
+msgstr ""
+
+#: mercury/info.go:117
+#, c-format
+msgid "Pid: %d"
+msgstr ""
+
+#: mercury/network.go:419 mercury/profile.go:268 mercury/storage.go:577 mercury/storage.go:936
+msgid "Press enter to open the editor again"
+msgstr ""
+
+#: mercury/config.go:817 mercury/config.go:882 mercury/config.go:1332 mercury/config.go:1382
+#: mercury/image.go:1144
+msgid "Press enter to start the editor again"
+msgstr ""
+
+#: mercury/help.go:73
+msgid "Print debug information"
+msgstr ""
+
+#: mercury/help.go:72
+msgid "Print less common commands"
+msgstr ""
+
+#: mercury/query.go:37
+msgid "Print the raw response"
+msgstr ""
+
+#: mercury/help.go:74
+msgid "Print verbose information"
+msgstr ""
+
+#: mercury/info.go:141
+#, c-format
+msgid "Processes: %d"
+msgstr ""
+
+#: mercury/profile.go:344
+#, c-format
+msgid "Profile %s added to %s"
+msgstr ""
+
+#: mercury/profile.go:218
+#, c-format
+msgid "Profile %s created"
+msgstr ""
+
+#: mercury/profile.go:292
+#, c-format
+msgid "Profile %s deleted"
+msgstr ""
+
+#: mercury/profile.go:379
+#, c-format
+msgid "Profile %s removed from %s"
+msgstr ""
+
+#: mercury/copy.go:37 mercury/copy.go:38 mercury/init.go:139 mercury/init.go:140
+msgid "Profile to apply to the new container"
+msgstr ""
+
+#: mercury/profile.go:321
+#, c-format
+msgid "Profiles %s applied to %s"
+msgstr ""
+
+#: mercury/info.go:115
+#, c-format
+msgid "Profiles: %s"
+msgstr ""
+
+#: mercury/image.go:588
+msgid "Properties:"
+msgstr ""
+
+#: mercury/remote.go:70
+msgid "Public image server"
+msgstr ""
+
+#: mercury/image.go:571
+#, c-format
+msgid "Public: %s"
+msgstr ""
+
+#: mercury/file.go:68 mercury/file.go:69
+msgid "Recursively push or pull files"
+msgstr ""
+
+#: mercury/image.go:509
+#, c-format
+msgid "Refreshing the image: %s"
+msgstr ""
+
+#: mercury/remote.go:68
+msgid "Remote admin password"
+msgstr ""
+
+#: mercury/utils.go:336
+msgid "Remote operation canceled by user"
+msgstr ""
+
+#: mercury/info.go:101
+#, c-format
+msgid "Remote: %s"
+msgstr ""
+
+#: mercury/delete.go:42
+#, c-format
+msgid "Remove %s (yes/no): "
+msgstr ""
+
+#: mercury/delete.go:36 mercury/delete.go:37
+msgid "Require user confirmation"
+msgstr ""
+
+#: mercury/info.go:138
+msgid "Resources:"
+msgstr ""
+
+#: mercury/main.go:235
+msgid "Restart containers."
+msgstr ""
+
+#: mercury/init.go:289
+#, c-format
+msgid "Retrieving image: %s"
+msgstr ""
+
+#: mercury/image.go:233
+msgid "SIZE"
+msgstr ""
+
+#: mercury/list.go:468
+msgid "SNAPSHOTS"
+msgstr ""
+
+#: mercury/storage.go:656
+msgid "SOURCE"
+msgstr ""
+
+#: mercury/list.go:469
+msgid "STATE"
+msgstr ""
+
+#: mercury/remote.go:385
+msgid "STATIC"
+msgstr ""
+
+#: mercury/list.go:471
+msgid "STORAGE POOL"
+msgstr ""
+
+#: mercury/remote.go:200
+msgid "Server certificate NACKed by user"
+msgstr ""
+
+#: mercury/remote.go:288
+msgid "Server doesn't trust us after adding our cert"
+msgstr ""
+
+#: mercury/remote.go:69
+msgid "Server protocol (apollo or simplestreams)"
+msgstr ""
+
+#: mercury/file.go:66
+msgid "Set the file's gid on push"
+msgstr ""
+
+#: mercury/file.go:67
+msgid "Set the file's perms on push"
+msgstr ""
+
+#: mercury/file.go:65
+msgid "Set the file's uid on push"
+msgstr ""
+
+#: mercury/help.go:29
+msgid "Show all commands (not just interesting ones)"
+msgstr ""
+
+#: mercury/help.go:75
+msgid "Show client version"
+msgstr ""
+
+#: mercury/info.go:39
+msgid "Show the container's last 100 log lines?"
+msgstr ""
+
+#: mercury/config.go:36
+msgid "Show the expanded configuration"
+msgstr ""
+
+#: mercury/image.go:569
+#, c-format
+msgid "Size: %.2fMB"
+msgstr ""
+
+#: mercury/info.go:219
+msgid "Snapshots:"
+msgstr ""
+
+#: mercury/action.go:142
+#, c-format
+msgid "Some containers failed to %s"
+msgstr ""
+
+#: mercury/image.go:602
+msgid "Source:"
+msgstr ""
+
+#: mercury/main.go:245
+msgid "Start containers."
+msgstr ""
+
+#: mercury/launch.go:59
+#, c-format
+msgid "Starting %s"
+msgstr ""
+
+#: mercury/info.go:109
+#, c-format
+msgid "Status: %s"
+msgstr ""
+
+#: mercury/main.go:251
+msgid "Stop containers."
+msgstr ""
+
+#: mercury/publish.go:37 mercury/publish.go:38
+msgid "Stop the container if currently running"
+msgstr ""
+
+#: mercury/publish.go:136
+msgid "Stopping container failed!"
+msgstr ""
+
+#: mercury/delete.go:121
+#, c-format
+msgid "Stopping the container failed: %s"
+msgstr ""
+
+#: mercury/storage.go:468
+#, c-format
+msgid "Storage pool %s created"
+msgstr ""
+
+#: mercury/storage.go:527
+#, c-format
+msgid "Storage pool %s deleted"
+msgstr ""
+
+#: mercury/init.go:145 mercury/init.go:146
+msgid "Storage pool name"
+msgstr ""
+
+#: mercury/storage.go:782
+#, c-format
+msgid "Storage volume %s created"
+msgstr ""
+
+#: mercury/storage.go:797
+#, c-format
+msgid "Storage volume %s deleted"
+msgstr ""
+
+#: mercury/action.go:49
+msgid "Store the container state (only for stop)"
+msgstr ""
+
+#: mercury/info.go:180
+msgid "Swap (current)"
+msgstr ""
+
+#: mercury/info.go:184
+msgid "Swap (peak)"
+msgstr ""
+
+#: mercury/list.go:470 mercury/network.go:505 mercury/storage.go:747
+msgid "TYPE"
+msgstr ""
+
+#: mercury/delete.go:105
+msgid "The container is currently running, stop it first or pass --force."
+msgstr ""
+
+#: mercury/publish.go:101
+msgid ""
+"The container is currently running. Use --force to have it stopped and "
+"restarted."
+msgstr ""
+
+#: mercury/init.go:362
+msgid "The container you are starting doesn't have any network attached to it."
+msgstr ""
+
+#: mercury/config.go:939 mercury/config.go:956
+msgid "The device already exists"
+msgstr ""
+
+#: mercury/config.go:1002 mercury/config.go:1014 mercury/config.go:1050 mercury/config.go:1068
+#: mercury/config.go:1114 mercury/config.go:1131 mercury/config.go:1174 mercury/config.go:1192
+msgid "The device doesn't exist"
+msgstr ""
+
+#: mercury/init.go:346
+#, c-format
+msgid "The local image '%s' couldn't be found, trying '%s:' instead."
+msgstr ""
+
+#: mercury/action.go:34
+msgid "The opposite of \"mercury pause\" is \"mercury start\"."
+msgstr ""
+
+#: mercury/network.go:290 mercury/network.go:343 mercury/storage.go:388 mercury/storage.go:508
+msgid "The specified device doesn't exist"
+msgstr ""
+
+#: mercury/network.go:294 mercury/network.go:347
+msgid "The specified device doesn't match the network"
+msgstr ""
+
+#: mercury/publish.go:74
+msgid "There is no \"image name\".  Did you want an alias?"
+msgstr ""
+
+#: mercury/help.go:47
+msgid ""
+"This is the APOLLO command line client.\n"
+"\n"
+"All of APOLLO's features can be driven through the various commands below.\n"
+"For help with any of those, simply call them with --help."
+msgstr ""
+
+#: mercury/action.go:45
+msgid "Time to wait for the container before killing it"
+msgstr ""
+
+#: mercury/image.go:572
+msgid "Timestamps:"
+msgstr ""
+
+#: mercury/init.go:364
+msgid "To attach a network to a container, use: mercury network attach"
+msgstr ""
+
+#: mercury/init.go:363
+msgid "To create a new network, use: mercury network create"
+msgstr ""
+
+#: mercury/main.go:164
+msgid "To start your first container, try: mercury launch ubuntu:16.04"
+msgstr ""
+
+#: mercury/copy.go:41 mercury/move.go:41
+msgid "Transfer mode. One of pull (default), push or relay."
+msgstr ""
+
+#: mercury/copy.go:198
+#, c-format
+msgid "Transferring container: %s"
+msgstr ""
+
+#: mercury/image.go:680
+#, c-format
+msgid "Transferring image: %s"
+msgstr ""
+
+#: mercury/action.go:106 mercury/launch.go:77
+#, c-format
+msgid "Try `mercury info --show-log %s` for more info"
+msgstr ""
+
+#: mercury/info.go:111
+msgid "Type: ephemeral"
+msgstr ""
+
+#: mercury/info.go:113
+msgid "Type: persistent"
+msgstr ""
+
+#: mercury/image.go:234
+msgid "UPLOAD DATE"
+msgstr ""
+
+#: mercury/remote.go:382
+msgid "URL"
+msgstr ""
+
+#: mercury/network.go:508 mercury/profile.go:556 mercury/storage.go:657 mercury/storage.go:750
+msgid "USED BY"
+msgstr ""
+
+#: mercury/manpage.go:36
+msgid "Unable to find help2man."
+msgstr ""
+
+#: mercury/file.go:112
+#, c-format
+msgid "Unknown file type '%s'"
+msgstr ""
+
+#: mercury/image.go:577
+#, c-format
+msgid "Uploaded: %s"
+msgstr ""
+
+#: mercury/action.go:37
+#, c-format
+msgid ""
+"Usage: mercury %s [<remote>:]<container> [[<remote>:]<container>...]\n"
+"\n"
+"%s%s"
+msgstr ""
+
+#: mercury/help.go:45
+msgid "Usage: mercury <command> [options]"
+msgstr ""
+
+#: mercury/config.go:85
+msgid ""
+"Usage: mercury config <subcommand> [options]\n"
+"\n"
+"Change container or server configuration options.\n"
+"\n"
+"*Container configuration*\n"
+"\n"
+"mercury config get [<remote>:][container] <key>\n"
+"    Get container or server configuration key.\n"
+"\n"
+"mercury config set [<remote>:][container] <key> <value>\n"
+"    Set container or server configuration key.\n"
+"\n"
+"mercury config unset [<remote>:][container] <key>\n"
+"    Unset container or server configuration key.\n"
+"\n"
+"mercury config show [<remote>:][container] [--expanded]\n"
+"    Show container or server configuration.\n"
+"\n"
+"mercury config edit [<remote>:][container]\n"
+"    Edit configuration, either by launching external editor or reading "
+"STDIN.\n"
+"\n"
+"*Container metadata*\n"
+"\n"
+"mercury config metadata show [<remote>:][container]\n"
+"    Show the container metadata.yaml content.\n"
+"\n"
+"mercury config metadata edit [<remote>:][container]\n"
+"    Edit the container metadata.yaml, either by launching external editor or "
+"reading STDIN.\n"
+"\n"
+"*Container templates*\n"
+"\n"
+"mercury config template list [<remote>:][container]\n"
+"    List the names of template files for a container.\n"
+"\n"
+"mercury config template show [<remote>:][container] [template]\n"
+"    Show the content of a template file for a container.\n"
+"\n"
+"mercury config template create [<remote>:][container] [template]\n"
+"    Add an empty template file for a container.\n"
+"\n"
+"mercury config template edit [<remote>:][container] [template]\n"
+"    Edit the content of a template file for a container, either by launching "
+"external editor or reading STDIN.\n"
+"\n"
+"mercury config template delete [<remote>:][container] [template]\n"
+"    Delete a template file for a container.\n"
+"\n"
+"\n"
+"*Device management*\n"
+"\n"
+"mercury config device add [<remote>:]<container> <device> <type> [key=value...]\n"
+"    Add a device to a container.\n"
+"\n"
+"mercury config device get [<remote>:]<container> <device> <key>\n"
+"    Get a device property.\n"
+"\n"
+"mercury config device set [<remote>:]<container> <device> <key> <value>\n"
+"    Set a device property.\n"
+"\n"
+"mercury config device unset [<remote>:]<container> <device> <key>\n"
+"    Unset a device property.\n"
+"\n"
+"mercury config device list [<remote>:]<container>\n"
+"    List devices for container.\n"
+"\n"
+"mercury config device show [<remote>:]<container>\n"
+"    Show full device details for container.\n"
+"\n"
+"mercury config device remove [<remote>:]<container> <name>...\n"
+"    Remove device from container.\n"
+"\n"
+"*Client trust store management*\n"
+"\n"
+"mercury config trust list [<remote>:]\n"
+"    List all trusted certs.\n"
+"\n"
+"mercury config trust add [<remote>:] <certfile.crt>\n"
+"    Add certfile.crt to trusted hosts.\n"
+"\n"
+"mercury config trust remove [<remote>:] [hostname|fingerprint]\n"
+"    Remove the cert from trusted hosts.\n"
+"\n"
+"*Examples*\n"
+"\n"
+"cat config.yaml | mercury config edit <container>\n"
+"    Update the container configuration from config.yaml.\n"
+"\n"
+"mercury config device add [<remote>:]container1 <device-name> disk source=/share/"
+"c1 path=opt\n"
+"    Will mount the host's /share/c1 onto /opt in the container.\n"
+"\n"
+"mercury config set [<remote>:]<container> limits.cpu 2\n"
+"    Will set a CPU limit of \"2\" for the container.\n"
+"\n"
+"mercury config set core.https_address [::]:8443\n"
+"    Will have APOLLO listen on IPv4 and IPv6 port 8443.\n"
+"\n"
+"mercury config set core.trust_password blah\n"
+"    Will set the server's trust password to blah."
+msgstr ""
+
+#: mercury/copy.go:28
+msgid ""
+"Usage: mercury copy [<remote>:]<source>[/<snapshot>] [[<remote>:]<destination>] "
+"[--ephemeral|e] [--profile|-p <profile>...] [--config|-c <key=value>...] [--"
+"container-only]\n"
+"\n"
+"Copy containers within or in between APOLLO instances."
+msgstr ""
+
+#: mercury/delete.go:27
+msgid ""
+"Usage: mercury delete [<remote>:]<container>[/<snapshot>] "
+"[[<remote>:]<container>[/<snapshot>]...]\n"
+"\n"
+"Delete containers and snapshots."
+msgstr ""
+
+#: mercury/exec.go:53
+msgid ""
+"Usage: mercury exec [<remote>:]<container> [-t] [-T] [-n] [--mode=auto|"
+"interactive|non-interactive] [--env KEY=VALUE...] [--] <command line>\n"
+"\n"
+"Execute commands in containers.\n"
+"\n"
+"Mode defaults to non-interactive, interactive mode is selected if both stdin "
+"AND stdout are terminals (stderr is ignored)."
+msgstr ""
+
+#: mercury/file.go:39
+msgid ""
+"Usage: mercury file <subcommand> [options]\n"
+"\n"
+"Manage files in containers.\n"
+"\n"
+"mercury file pull [-r|--recursive] [<remote>:]<container>/<path> "
+"[[<remote>:]<container>/<path>...] <target path>\n"
+"    Pull files from containers.\n"
+"\n"
+"mercury file push [-r|--recursive] [-p|--create-dirs] [--uid=UID] [--gid=GID] [--"
+"mode=MODE] <source path> [<source path>...] [<remote>:]<container>/<path>\n"
+"    Push files into containers.\n"
+"\n"
+"mercury file delete [<remote>:]<container>/<path> [[<remote>:]<container>/"
+"<path>...]\n"
+"    Delete files in containers.\n"
+"\n"
+"mercury file edit [<remote>:]<container>/<path>\n"
+"    Edit files in containers using the default text editor.\n"
+"\n"
+"*Examples*\n"
+"mercury file push /etc/hosts foo/etc/hosts\n"
+"   To push /etc/hosts into the container \"foo\".\n"
+"\n"
+"mercury file pull foo/etc/hosts .\n"
+"   To pull /etc/hosts from the container and write it to the current "
+"directory."
+msgstr ""
+
+#: mercury/finger.go:15
+msgid ""
+"Usage: mercury finger [<remote>:]\n"
+"\n"
+"Check if the APOLLO server is alive."
+msgstr ""
+
+#: mercury/help.go:22
+msgid ""
+"Usage: mercury help [--all]\n"
+"\n"
+"Help page for the APOLLO client."
+msgstr ""
+
+#: mercury/image.go:72
+msgid ""
+"Usage: mercury image <subcommand> [options]\n"
+"\n"
+"Manipulate container images.\n"
+"\n"
+"In APOLLO containers are created from images. Those images were themselves\n"
+"either generated from an existing container or downloaded from an image\n"
+"server.\n"
+"\n"
+"When using remote images, APOLLO will automatically cache images for you\n"
+"and remove them upon expiration.\n"
+"\n"
+"The image unique identifier is the hash (sha-256) of its representation\n"
+"as a compressed tarball (or for split images, the concatenation of the\n"
+"metadata and rootfs tarballs).\n"
+"\n"
+"Images can be referenced by their full hash, shortest unique partial\n"
+"hash or alias name (if one is set).\n"
+"\n"
+"\n"
+"mercury image import <tarball>|<dir> [<rootfs tarball>|<URL>] [<remote>:] [--"
+"public] [--created-at=ISO-8601] [--expires-at=ISO-8601] [--"
+"fingerprint=FINGERPRINT] [--alias=ALIAS...] [prop=value]\n"
+"    Import an image tarball (or tarballs) or an image directory into the APOLLO "
+"image store.\n"
+"    Directory import is only available on Linux and must be performed as "
+"root.\n"
+"\n"
+"mercury image copy [<remote>:]<image> <remote>: [--alias=ALIAS...] [--copy-"
+"aliases] [--public] [--auto-update]\n"
+"    Copy an image from one APOLLO daemon to another over the network.\n"
+"\n"
+"    The auto-update flag instructs the server to keep this image up to\n"
+"    date. It requires the source to be an alias and for it to be public.\n"
+"\n"
+"mercury image delete [<remote>:]<image> [[<remote>:]<image>...]\n"
+"    Delete one or more images from the APOLLO image store.\n"
+"\n"
+"mercury image refresh [<remote>:]<image> [[<remote>:]<image>...]\n"
+"    Refresh one or more images from its parent remote.\n"
+"\n"
+"mercury image export [<remote>:]<image> [target]\n"
+"    Export an image from the APOLLO image store into a distributable tarball.\n"
+"\n"
+"    The output target is optional and defaults to the working directory.\n"
+"    The target may be an existing directory, file name, or \"-\" to specify\n"
+"    stdout.  The target MUST be a directory when exporting a split image.\n"
+"    If the target is a directory, the image's name (each part's name for\n"
+"    split images) as found in the database will be used for the exported\n"
+"    image.  If the target is a file (not a directory and not stdout), then\n"
+"    the appropriate extension will be appended to the provided file name\n"
+"    based on the algorithm used to compress the image.\n"
+"\n"
+"mercury image info [<remote>:]<image>\n"
+"    Print everything APOLLO knows about a given image.\n"
+"\n"
+"mercury image list [<remote>:] [filter] [--format csv|json|table|yaml] [-c "
+"<columns>]\n"
+"    List images in the APOLLO image store. Filters may be of the\n"
+"    <key>=<value> form for property based filtering, or part of the image\n"
+"    hash or part of the image alias name.\n"
+"\n"
+"    The -c option takes a (optionally comma-separated) list of arguments "
+"that\n"
+"    control which image attributes to output when displaying in table or "
+"csv\n"
+"    format.\n"
+"\n"
+"    Default column layout is: lfpdasu\n"
+"\n"
+"    Column shorthand chars:\n"
+"\n"
+"        l - Shortest image alias (and optionally number of other aliases)\n"
+"\n"
+"        L - Newline-separated list of all image aliases\n"
+"\n"
+"        f - Fingerprint\n"
+"\n"
+"        p - Whether image is public\n"
+"\n"
+"        d - Description\n"
+"\n"
+"        a - Architecture\n"
+"\n"
+"        s - Size\n"
+"\n"
+"        u - Upload date\n"
+"\n"
+"mercury image show [<remote>:]<image>\n"
+"    Yaml output of the user modifiable properties of an image.\n"
+"\n"
+"mercury image edit [<remote>:]<image>\n"
+"    Edit image, either by launching external editor or reading STDIN.\n"
+"    Example: mercury image edit <image> # launch editor\n"
+"             cat image.yaml | mercury image edit <image> # read from image.yaml\n"
+"\n"
+"mercury image alias create [<remote>:]<alias> <fingerprint>\n"
+"    Create a new alias for an existing image.\n"
+"\n"
+"mercury image alias delete [<remote>:]<alias>\n"
+"    Delete an alias.\n"
+"\n"
+"mercury image alias list [<remote>:] [filter]\n"
+"    List the aliases. Filters may be part of the image hash or part of the "
+"image alias name."
+msgstr ""
+
+#: mercury/info.go:26
+msgid ""
+"Usage: mercury info [<remote>:][<container>] [--show-log]\n"
+"\n"
+"Show container or server information.\n"
+"\n"
+"mercury info [<remote>:]<container> [--show-log]\n"
+"    For container information.\n"
+"\n"
+"mercury info [<remote>:]\n"
+"    For APOLLO server information."
+msgstr ""
+
+#: mercury/init.go:77
+msgid ""
+"Usage: mercury init [<remote>:]<image> [<remote>:][<name>] [--ephemeral|-e] [--"
+"profile|-p <profile>...] [--config|-c <key=value>...] [--network|-n "
+"<network>] [--storage|-s <pool>] [--type|-t <instance type>]\n"
+"\n"
+"Create containers from images.\n"
+"\n"
+"Not specifying -p will result in the default profile.\n"
+"Specifying \"-p\" with no argument will result in no profile.\n"
+"\n"
+"Examples:\n"
+"    mercury init ubuntu:16.04 u1"
+msgstr ""
+
+#: mercury/launch.go:20
+msgid ""
+"Usage: mercury launch [<remote>:]<image> [<remote>:][<name>] [--ephemeral|-e] [--"
+"profile|-p <profile>...] [--config|-c <key=value>...] [--network|-n "
+"<network>] [--storage|-s <pool>] [--type|-t <instance type>]\n"
+"\n"
+"Create and start containers from images.\n"
+"\n"
+"Not specifying -p will result in the default profile.\n"
+"Specifying \"-p\" with no argument will result in no profile.\n"
+"\n"
+"Examples:\n"
+"    mercury launch ubuntu:16.04 u1"
+msgstr ""
+
+#: mercury/list.go:44
+msgid ""
+"Usage: mercury list [<remote>:] [filters] [--format csv|json|table|yaml] [-c "
+"<columns>] [--fast]\n"
+"\n"
+"List the existing containers.\n"
+"\n"
+"Default column layout: ns46tS\n"
+"Fast column layout: nsacPt\n"
+"\n"
+"*Filters*\n"
+"A single keyword like \"web\" which will list any container with a name "
+"starting by \"web\".\n"
+"\n"
+"A regular expression on the container name. (e.g. .*web.*01$).\n"
+"\n"
+"A key/value pair referring to a configuration item. For those, the namespace "
+"can be abbreviated to the smallest unambiguous identifier.\n"
+"\t- \"user.blah=abc\" will list all containers with the \"blah\" user "
+"property set to \"abc\".\n"
+"\n"
+"\t- \"u.blah=abc\" will do the same\n"
+"\n"
+"\t- \"security.privileged=true\" will list all privileged containers\n"
+"\n"
+"\t- \"s.privileged=true\" will do the same\n"
+"\n"
+"A regular expression matching a configuration item or its value. (e.g. "
+"volatile.eth0.hwaddr=00:16:3e:.*).\n"
+"\n"
+"*Columns*\n"
+"The -c option takes a comma separated list of arguments that control\n"
+"which container attributes to output when displaying in table or csv\n"
+"format.\n"
+"\n"
+"Column arguments are either pre-defined shorthand chars (see below),\n"
+"or (extended) config keys.\n"
+"\n"
+"Commas between consecutive shorthand chars are optional.\n"
+"\n"
+"Pre-defined column shorthand chars:\n"
+"\n"
+"\t4 - IPv4 address\n"
+"\n"
+"\t6 - IPv6 address\n"
+"\n"
+"\ta - Architecture\n"
+"\n"
+"\tb - Storage pool\n"
+"\n"
+"\tc - Creation date\n"
+"\n"
+"\td - Description\n"
+"\n"
+"\tl - Last used date\n"
+"\n"
+"\tn - Name\n"
+"\n"
+"\tp - PID of the container's init process\n"
+"\n"
+"\tP - Profiles\n"
+"\n"
+"\ts - State\n"
+"\n"
+"\tS - Number of snapshots\n"
+"\n"
+"\tt - Type (persistent or ephemeral)\n"
+"\n"
+"Custom columns are defined with \"key[:name][:maxWidth]\":\n"
+"\n"
+"\tKEY: The (extended) config key to display\n"
+"\n"
+"\tNAME: Name to display in the column header.\n"
+"\tDefaults to the key if not specified or empty.\n"
+"\n"
+"\tMAXWIDTH: Max width of the column (longer results are truncated).\n"
+"\tDefaults to -1 (unlimited). Use 0 to limit to the column header size.\n"
+"\n"
+"*Examples*\n"
+"mercury list -c n,volatile.base_image:\"BASE IMAGE\":0,s46,volatile.eth0.hwaddr:"
+"MAC\n"
+"\tShows a list of containers using the \"NAME\", \"BASE IMAGE\", \"STATE\", "
+"\"IPV4\",\n"
+"\t\"IPV6\" and \"MAC\" columns.\n"
+"\n"
+"\t\"BASE IMAGE\" and \"MAC\" are custom columns generated from container "
+"configuration keys.\n"
+"\n"
+"mercury list -c ns,user.comment:comment\n"
+"\tList images with their running state and user comment. "
+msgstr ""
+
+#: mercury/manpage.go:20
+msgid ""
+"Usage: mercury manpage <directory>\n"
+"\n"
+"Generate all the APOLLO manpages."
+msgstr ""
+
+#: mercury/monitor.go:41
+msgid ""
+"Usage: mercury monitor [<remote>:] [--type=TYPE...]\n"
+"\n"
+"Monitor a local or remote APOLLO server.\n"
+"\n"
+"By default the monitor will listen to all message types.\n"
+"\n"
+"Message types to listen for can be specified with --type.\n"
+"\n"
+"*Examples*\n"
+"mercury monitor --type=logging\n"
+"    Only show log message."
+msgstr ""
+
+#: mercury/move.go:24
+msgid ""
+"Usage: mercury move [<remote>:]<container>[/<snapshot>] [<remote>:][<container>[/"
+"<snapshot>]] [--container-only]\n"
+"\n"
+"Move containers within or in between APOLLO instances.\n"
+"\n"
+"mercury move [<remote>:]<source container> [<remote>:][<destination container>] "
+"[--container-only]\n"
+"    Move a container between two hosts, renaming it if destination name "
+"differs.\n"
+"\n"
+"mercury move <old name> <new name> [--container-only]\n"
+"    Rename a local container.\n"
+"\n"
+"mercury move <container>/<old snapshot name> <container>/<new snapshot name>\n"
+"    Rename a snapshot."
+msgstr ""
+
+#: mercury/network.go:50
+msgid ""
+"Usage: mercury network <subcommand> [options]\n"
+"\n"
+"Manage and attach containers to networks.\n"
+"\n"
+"mercury network list [<remote>:]\n"
+"    List available networks.\n"
+"\n"
+"mercury network show [<remote>:]<network>\n"
+"    Show details of a network.\n"
+"\n"
+"mercury network create [<remote>:]<network> [key=value...]\n"
+"    Create a network.\n"
+"\n"
+"mercury network get [<remote>:]<network> <key>\n"
+"    Get network configuration.\n"
+"\n"
+"mercury network set [<remote>:]<network> <key> <value>\n"
+"    Set network configuration.\n"
+"\n"
+"mercury network unset [<remote>:]<network> <key>\n"
+"    Unset network configuration.\n"
+"\n"
+"mercury network delete [<remote>:]<network>\n"
+"    Delete a network.\n"
+"\n"
+"mercury network edit [<remote>:]<network>\n"
+"    Edit network, either by launching external editor or reading STDIN.\n"
+"\n"
+"mercury network attach [<remote>:]<network> <container> [device name] [interface "
+"name]\n"
+"    Attach a network interface connecting the network to a specified "
+"container.\n"
+"\n"
+"mercury network attach-profile [<remote>:]<network> <profile> [device name] "
+"[interface name]\n"
+"    Attach a network interface connecting the network to a specified "
+"profile.\n"
+"\n"
+"mercury network detach [<remote>:]<network> <container> [device name]\n"
+"    Remove a network interface connecting the network to a specified "
+"container.\n"
+"\n"
+"mercury network detach-profile [<remote>:]<network> <container> [device name]\n"
+"    Remove a network interface connecting the network to a specified "
+"profile.\n"
+"\n"
+"*Examples*\n"
+"cat network.yaml | mercury network edit <network>\n"
+"    Update a network using the content of network.yaml"
+msgstr ""
+
+#: mercury/profile.go:51
+msgid ""
+"Usage: mercury profile <subcommand> [options]\n"
+"\n"
+"Manage container configuration profiles.\n"
+"\n"
+"*Profile configuration*\n"
+"mercury profile list [<remote>:]\n"
+"    List available profiles.\n"
+"\n"
+"mercury profile show [<remote>:]<profile>\n"
+"    Show details of a profile.\n"
+"\n"
+"mercury profile create [<remote>:]<profile>\n"
+"    Create a profile.\n"
+"\n"
+"mercury profile copy [<remote>:]<profile> [<remote>:]<profile>\n"
+"    Copy the profile.\n"
+"\n"
+"mercury profile get [<remote>:]<profile> <key>\n"
+"    Get profile configuration.\n"
+"\n"
+"mercury profile set [<remote>:]<profile> <key> <value>\n"
+"    Set profile configuration.\n"
+"\n"
+"mercury profile unset [<remote>:]<profile> <key>\n"
+"    Unset profile configuration.\n"
+"\n"
+"mercury profile delete [<remote>:]<profile>\n"
+"    Delete a profile.\n"
+"\n"
+"mercury profile edit [<remote>:]<profile>\n"
+"    Edit profile, either by launching external editor or reading STDIN.\n"
+"\n"
+"*Profile assignment*\n"
+"mercury profile assign [<remote>:]<container> <profiles>\n"
+"    Replace the current set of profiles for the container by the one "
+"provided.\n"
+"\n"
+"mercury profile add [<remote>:]<container> <profile>\n"
+"    Add a profile to a container\n"
+"\n"
+"mercury profile remove [<remote>:]<container> <profile>\n"
+"    Remove the profile from a container\n"
+"\n"
+"*Device management*\n"
+"mercury profile device list [<remote>:]<profile>\n"
+"    List devices in the given profile.\n"
+"\n"
+"mercury profile device show [<remote>:]<profile>\n"
+"    Show full device details in the given profile.\n"
+"\n"
+"mercury profile device remove [<remote>:]<profile> <name>\n"
+"    Remove a device from a profile.\n"
+"\n"
+"mercury profile device get [<remote>:]<profile> <name> <key>\n"
+"    Get a device property.\n"
+"\n"
+"mercury profile device set [<remote>:]<profile> <name> <key> <value>\n"
+"    Set a device property.\n"
+"\n"
+"mercury profile device unset [<remote>:]<profile> <name> <key>\n"
+"    Unset a device property.\n"
+"\n"
+"mercury profile device add [<remote>:]<profile> <device> <type> [key=value...]\n"
+"    Add a profile device, such as a disk or a nic, to the containers using "
+"the specified profile.\n"
+"\n"
+"*Examples*\n"
+"cat profile.yaml | mercury profile edit <profile>\n"
+"    Update a profile using the content of profile.yaml\n"
+"\n"
+"mercury profile assign foo default,bar\n"
+"    Set the profiles for \"foo\" to \"default\" and \"bar\".\n"
+"\n"
+"mercury profile assign foo default\n"
+"    Reset \"foo\" to only using the \"default\" profile.\n"
+"\n"
+"mercury profile assign foo ''\n"
+"    Remove all profile from \"foo\""
+msgstr ""
+
+#: mercury/publish.go:28
+msgid ""
+"Usage: mercury publish [<remote>:]<container>[/<snapshot>] [<remote>:] [--"
+"alias=ALIAS...] [prop-key=prop-value...]\n"
+"\n"
+"Publish containers as images."
+msgstr ""
+
+#: mercury/query.go:25
+msgid ""
+"Usage: mercury query [-X <action>] [-d <data>] [--wait] [--raw] [<remote>:]<API "
+"path>\n"
+"\n"
+"Send a raw query to APOLLO.\n"
+"\n"
+"*Examples*\n"
+"mercury query -X DELETE --wait /1.0/containers/c1\n"
+"    Delete local container \"c1\"."
+msgstr ""
+
+#: mercury/remote.go:39
+msgid ""
+"Usage: mercury remote <subcommand> [options]\n"
+"\n"
+"Manage the list of remote APOLLO servers.\n"
+"\n"
+"mercury remote add [<remote>] <IP|FQDN|URL> [--accept-certificate] [--"
+"password=PASSWORD] [--public] [--protocol=PROTOCOL]\n"
+"    Add the remote <remote> at <url>.\n"
+"\n"
+"mercury remote remove <remote>\n"
+"    Remove the remote <remote>.\n"
+"\n"
+"mercury remote list\n"
+"    List all remotes.\n"
+"\n"
+"mercury remote rename <old name> <new name>\n"
+"    Rename remote <old name> to <new name>.\n"
+"\n"
+"mercury remote set-url <remote> <url>\n"
+"    Update <remote>'s url to <url>.\n"
+"\n"
+"mercury remote set-default <remote>\n"
+"    Set the default remote.\n"
+"\n"
+"mercury remote get-default\n"
+"    Print the default remote."
+msgstr ""
+
+#: mercury/restore.go:22
+msgid ""
+"Usage: mercury restore [<remote>:]<container> <snapshot> [--stateful]\n"
+"\n"
+"Restore containers from snapshots.\n"
+"\n"
+"If --stateful is passed, then the running state will be restored too.\n"
+"\n"
+"*Examples*\n"
+"mercury snapshot u1 snap0\n"
+"    Create the snapshot.\n"
+"\n"
+"mercury restore u1 snap0\n"
+"    Restore the snapshot."
+msgstr ""
+
+#: mercury/snapshot.go:22
+msgid ""
+"Usage: mercury snapshot [<remote>:]<container> <snapshot name> [--stateful]\n"
+"\n"
+"Create container snapshots.\n"
+"\n"
+"When --stateful is used, APOLLO attempts to checkpoint the container's\n"
+"running state, including process memory state, TCP connections, ...\n"
+"\n"
+"*Examples*\n"
+"mercury snapshot u1 snap0\n"
+"    Create a snapshot of \"u1\" called \"snap0\"."
+msgstr ""
+
+#: mercury/storage.go:62
+msgid ""
+"Usage: mercury storage <subcommand> [options]\n"
+"\n"
+"Manage storage pools and volumes.\n"
+"\n"
+"*Storage pools*\n"
+"mercury storage list [<remote>:]\n"
+"    List available storage pools.\n"
+"\n"
+"mercury storage show [<remote>:]<pool>\n"
+"    Show details of a storage pool.\n"
+"\n"
+"mercury storage create [<remote>:]<pool> <driver> [key=value]...\n"
+"    Create a storage pool.\n"
+"\n"
+"mercury storage get [<remote>:]<pool> <key>\n"
+"    Get storage pool configuration.\n"
+"\n"
+"mercury storage set [<remote>:]<pool> <key> <value>\n"
+"    Set storage pool configuration.\n"
+"\n"
+"mercury storage unset [<remote>:]<pool> <key>\n"
+"    Unset storage pool configuration.\n"
+"\n"
+"mercury storage delete [<remote>:]<pool>\n"
+"    Delete a storage pool.\n"
+"\n"
+"mercury storage edit [<remote>:]<pool>\n"
+"    Edit storage pool, either by launching external editor or reading "
+"STDIN.\n"
+"\n"
+"*Storage volumes*\n"
+"mercury storage volume list [<remote>:]<pool>\n"
+"    List available storage volumes on a storage pool.\n"
+"\n"
+"mercury storage volume show [<remote>:]<pool> <volume>\n"
+"    Show details of a storage volume on a storage pool.\n"
+"\n"
+"mercury storage volume create [<remote>:]<pool> <volume> [key=value]...\n"
+"    Create a storage volume on a storage pool.\n"
+"\n"
+"mercury storage volume get [<remote>:]<pool> <volume> <key>\n"
+"    Get storage volume configuration on a storage pool.\n"
+"\n"
+"mercury storage volume set [<remote>:]<pool> <volume> <key> <value>\n"
+"    Set storage volume configuration on a storage pool.\n"
+"\n"
+"mercury storage volume unset [<remote>:]<pool> <volume> <key>\n"
+"    Unset storage volume configuration on a storage pool.\n"
+"\n"
+"mercury storage volume delete [<remote>:]<pool> <volume>\n"
+"    Delete a storage volume on a storage pool.\n"
+"\n"
+"mercury storage volume edit [<remote>:]<pool> <volume>\n"
+"    Edit storage pool, either by launching external editor or reading "
+"STDIN.\n"
+"\n"
+"mercury storage volume attach [<remote>:]<pool> <volume> <container> [device "
+"name] <path>\n"
+"    Attach a storage volume to the specified container.\n"
+"\n"
+"mercury storage volume attach-profile [<remote:>]<pool> <volume> <profile> "
+"[device name] <path>\n"
+"    Attach a storage volume to the specified profile.\n"
+"\n"
+"mercury storage volume detach [<remote>:]<pool> <volume> <container> [device "
+"name]\n"
+"    Detach a storage volume from the specified container.\n"
+"\n"
+"mercury storage volume detach-profile [<remote:>]<pool> <volume> <profile> "
+"[device name]\n"
+"    Detach a storage volume from the specified profile.\n"
+"\n"
+"Unless specified through a prefix, all volume operations affect \"custom"
+"\" (user created) volumes.\n"
+"\n"
+"*Examples*\n"
+"cat pool.yaml | mercury storage edit [<remote>:]<pool>\n"
+"    Update a storage pool using the content of pool.yaml.\n"
+"\n"
+"cat pool.yaml | mercury storage volume edit [<remote>:]<pool> <volume>\n"
+"    Update a storage volume using the content of pool.yaml.\n"
+"\n"
+"mercury storage volume show default data\n"
+"    Will show the properties of a custom volume called \"data\" in the "
+"\"default\" pool.\n"
+"\n"
+"mercury storage volume show default container/data\n"
+"    Will show the properties of the filesystem for a container called \"data"
+"\" in the \"default\" pool."
+msgstr ""
+
+#: mercury/version.go:18
+msgid ""
+"Usage: mercury version\n"
+"\n"
+"Print the version number of this client tool."
+msgstr ""
+
+#: mercury/delete.go:46
+msgid "User aborted delete operation."
+msgstr ""
+
+#: mercury/utils.go:341
+msgid ""
+"User signaled us three times, exiting. The remote operation will keep "
+"running."
+msgstr ""
+
+#: mercury/query.go:36
+msgid "Wait for the operation to complete"
+msgstr ""
+
+#: mercury/restore.go:38
+msgid ""
+"Whether or not to restore the container's running state from snapshot (if "
+"available)"
+msgstr ""
+
+#: mercury/snapshot.go:36
+msgid "Whether or not to snapshot the container's running state"
+msgstr ""
+
+#: mercury/network.go:492 mercury/remote.go:357 mercury/remote.go:362
+msgid "YES"
+msgstr ""
+
+#: mercury/exec.go:126
+msgid "You can't pass -t and -T at the same time"
+msgstr ""
+
+#: mercury/exec.go:130
+msgid "You can't pass -t or -T at the same time as --mode"
+msgstr ""
+
+#: mercury/copy.go:63
+msgid "You must specify a source container name"
+msgstr ""
+
+#: mercury/main.go:68
+msgid "`mercury config profile` is deprecated, please use `mercury profile`"
+msgstr ""
+
+#: mercury/remote.go:345
+msgid "can't remove the default remote"
+msgstr ""
+
+#: mercury/file.go:282
+msgid "can't supply uid/gid/mode in recursive mode"
+msgstr ""
+
+#: mercury/remote.go:371
+msgid "default"
+msgstr ""
+
+#: mercury/init.go:311
+msgid "didn't get any affected image, container or snapshot from server"
+msgstr ""
+
+#: mercury/image.go:563
+msgid "disabled"
+msgstr ""
+
+#: mercury/image.go:565
+msgid "enabled"
+msgstr ""
+
+#: mercury/action.go:134 mercury/main.go:29 mercury/main.go:183
+#, c-format
+msgid "error: %v"
+msgstr ""
+
+#: mercury/help.go:37 mercury/main.go:124
+#, c-format
+msgid "error: unknown command: %s"
+msgstr ""
+
+#: mercury/image.go:206 mercury/image.go:558
+msgid "no"
+msgstr ""
+
+#: mercury/remote.go:193
+msgid "ok (y/n)?"
+msgstr ""
+
+#: mercury/main.go:356 mercury/main.go:360
+#, c-format
+msgid "processing aliases failed %s\n"
+msgstr ""
+
+#: mercury/file.go:556
+msgid "recursive edit doesn't make sense :("
+msgstr ""
+
+#: mercury/remote.go:407
+#, c-format
+msgid "remote %s already exists"
+msgstr ""
+
+#: mercury/remote.go:337 mercury/remote.go:399 mercury/remote.go:434 mercury/remote.go:450
+#, c-format
+msgid "remote %s doesn't exist"
+msgstr ""
+
+#: mercury/remote.go:320
+#, c-format
+msgid "remote %s exists as <%s>"
+msgstr ""
+
+#: mercury/remote.go:341 mercury/remote.go:403 mercury/remote.go:438
+#, c-format
+msgid "remote %s is static and cannot be modified"
+msgstr ""
+
+#: mercury/info.go:230
+msgid "stateful"
+msgstr ""
+
+#: mercury/info.go:232
+msgid "stateless"
+msgstr ""
+
+#: mercury/info.go:226
+#, c-format
+msgid "taken at %s"
+msgstr ""
+
+#: mercury/main.go:287
+msgid "wrong number of subcommand arguments"
+msgstr ""
+
+#: mercury/delete.go:45 mercury/image.go:204 mercury/image.go:560
+msgid "yes"
+msgstr ""
